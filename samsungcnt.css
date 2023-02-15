@@ -514,25 +514,33 @@ header .main .sidemenu li:last-of-type i {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.globalnetwork .section .img {
-  width: 1065px;
+.globalnetwork .section .img img {
+  height: 620px;
+
 }
 
 .globalnetwork .section .list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 550px;
+}
+
+.globalnetwork .section .list > div {
+  margin: 16px 0;
 }
 
 .globalnetwork .section .list .subtitle {
   text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
 }
 
 .globalnetwork .section .list .menu {
-  width: 550px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 20px;
@@ -542,3 +550,121 @@ header .main .sidemenu li:last-of-type i {
   border-radius: 10px;
 }
 
+.globalnetwork .section .list .shame {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.globalnetwork .section .list .shame div {
+  padding: 15px 28px;
+  font-size: 23px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.globalnetwork .section .list .shame div .number {
+  font-size: 55px;
+  padding-left: 30px;
+  padding-right: 5px;
+}
+
+.globalnetwork .section .list .shame div .number,
+.globalnetwork .section .list .shame div .text {
+  color:rgb(20, 40, 160);
+}
+
+.globalnetwork .section .list .etc div {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 550px;
+  padding: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.globalnetwork > .text {
+  text-align: right;
+  margin-top: 16px;
+  font-size: 13px;
+  letter-spacing: -1px;;
+}
+
+/* investor */
+.investor {
+  margin-bottom: 80px;
+}
+
+.investor .contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.investor .contents > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 30px 50px;
+}
+
+.investor .contents div .subtitle {
+  font-size: 23px;
+}
+
+
+/* footer */
+footer {
+  width: 100%;
+  height: 177px;
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+footer .left {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  padding: 50px 0;
+}
+
+footer .left ul {
+  display: flex;
+  padding-bottom: 18px;
+}
+
+footer .left ul li {
+  padding-right: 20px;
+}
+
+footer .left ul li:nth-of-type(3) {
+  color: rgb(41, 155, 195);
+}
+
+footer .left div {
+  color: rgb(84, 84, 84);
+}
+
+footer .right {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  padding: 10px 20px;
+  border: 1px solid rgb(84, 84, 84);
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+footer .right div {
+  padding-right: 70px;
+}
