@@ -35,19 +35,7 @@ ul {
 .subtitle {
   font-size: 18px;
 }
-/* 
 
-
-h3 {
-  margin: 0;
-  font-size: 25px;
-}
-
-h6 {
-  font-size: 18px;
-  margin: 0;
-}
-*/
 header {
   height: 160px;
 }
@@ -140,8 +128,19 @@ header .main .sidemenu li:last-of-type i {
 .section1 .main .contents {
   width: 75%;
   height: 100%;
-  background: url('images/section1/kv1.jpg') no-repeat;
   border-radius: 10px;
+  background: url('images/section1/kv1.jpg') no-repeat;
+  position: relative;
+}
+
+.section1 .main .contents::after {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .section1 .main .contents .text {
@@ -150,6 +149,8 @@ header .main .sidemenu li:last-of-type i {
   flex-direction: column;
   align-content: left;
   color: #fff;
+  position: relative;
+  z-index: 100;
 }
 
 .section1 .main .contents .title {
@@ -181,21 +182,37 @@ header .main .sidemenu li:last-of-type i {
 }
 
 .section1 .main .aside .esg {
-  height: 100%;
+  width: 100%;
+  height: 76%;
   border-radius: 10px;
   background: url('images/section1/0e9f6a13-e9f8-4119-b1bc-a9f68278880e.jpg');
   background-size: cover;
+  position: relative;
+}
+
+.section1 .main .aside .esg::after {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .section1 .main .aside .esg .top {
   display: flex;
   justify-content: space-between;
-  padding: 30px 40px 30px 30px;
+  padding: 40px;
+  position: relative;
+  z-index: 100;
 }
 
 .section1 .main .aside .esg .top div:first-of-type {
   font-size: 20px;
   color: #fff;
+  position: relative;
+  z-index: 100;
 }
 
 .section1 .main .aside .esg .top div:last-of-type {
@@ -204,21 +221,25 @@ header .main .sidemenu li:last-of-type i {
   background-color: rgb(95, 96, 97);
   border-radius: 30px;
   padding: 0 15px;
+  position: relative;
+  z-index: 100;
 }
 
 .section1 .main .aside .esg .text {
-  padding-top: 340px;
+  padding-top: 290px;
   color: #fff;
   margin: 0 40px;
+  position: relative;
+  z-index: 100;
 }
 
-.section1 .main .aside .esg .title {
+.section1 .main .aside .esg .text .title {
   font-size: 25px;
   padding-top: 10px;
 }
 
 .section1 .main .aside .chart {
-  height: 134px;
+  height: 24%;
   background-color: rgb(28 ,156, 158);
   margin: 16px 0 0 0;
   border-radius: 10px;
@@ -228,7 +249,7 @@ header .main .sidemenu li:last-of-type i {
 .section1 .main .aside .chart .info {
   display: flex;
   padding: 0;
-  margin: 22px 0 10px 30px;
+  margin: 40px 0 10px 30px;
 }
 
 .section1 .main .aside .chart .info li {
@@ -249,7 +270,7 @@ header .main .sidemenu li:last-of-type i {
 }
 
 .section1 .main .aside .chart .number div:first-of-type {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .section1 .main .aside .chart .number div:last-of-type {
@@ -267,6 +288,7 @@ header .main .sidemenu li:last-of-type i {
   display: flex;
   justify-content: space-between;
   gap: 16px;
+  position: relative;
 }
 
 .ourbusiness .contents > div {
@@ -279,6 +301,8 @@ header .main .sidemenu li:last-of-type i {
 
 .ourbusiness .contents div .text {
   padding: 555px 0 0 35px;
+  position: relative;
+  z-index: 100;
 }
 
 .ourbusiness .contents div .text .title {
@@ -293,16 +317,56 @@ header .main .sidemenu li:last-of-type i {
   background-image: url('images/our_business/business1.jpg');
 }
 
+.ourbusiness .contents .build::after {
+  width: 425.5px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.18);
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+}
+
 .ourbusiness .contents .firm {
   background-image: url('images/our_business/business2.jpg')
+}
+
+.ourbusiness .contents .firm::after {
+  width: 425.5px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.18);
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
 }
 
 .ourbusiness .contents .fashion {
   background-image: url('images/our_business/business3.jpg');
 }
 
+.ourbusiness .contents .fashion::after {
+  width: 425.5px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.18);
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+}
+
 .ourbusiness .contents .resort {
   background-image: url('images/our_business/business4.jpg');
+}
+
+.ourbusiness .contents .resort::after {
+  width: 425.5px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.18);
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
 }
 
 /* esgactivity */
@@ -344,6 +408,17 @@ header .main .sidemenu li:last-of-type i {
   background-image: url('images/esg_activity/598d9763-a1cb-4b07-89c2-255ece40cfb5.jpg');
   background-size: cover;
   border-radius: 10px;
+  position: relative;
+}
+
+.esgactivity .contents .bottom .social::after {
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.2);
+  content:"";
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
 }
 
 .esgactivity .contents .bottom .title {
@@ -357,10 +432,23 @@ header .main .sidemenu li:last-of-type i {
   background-image: url('images/esg_activity/315f6756-336a-4bdd-a8f5-cfe49fb17a0d.jpg');
   background-size: cover;
   border-radius: 10px;
+  position: relative;
+}
+
+.esgactivity .contents .bottom .environment::after {
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.2);
+  content:"";
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
 }
 
 .esgactivity .contents .text {
   padding: 555px 0 0 40px;
+  position: relative;
+  z-index: 100;
 }
 
 /* newsroom */
@@ -451,6 +539,18 @@ header .main .sidemenu li:last-of-type i {
   background-image: url('images/newsroom/e615776d-e51c-4b3f-b6b7-0b9d88bf6cf7.JPG');
   background-size: cover;
   border-radius: 10px;
+  position: relative;
+}
+
+.newsroom .contents .allcontents .box1::after {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
 }
 
 .newsroom .contents .allcontents .box2 {
@@ -459,6 +559,18 @@ header .main .sidemenu li:last-of-type i {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  position: relative;
+}
+
+.newsroom .contents .allcontents .box2::after {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
 }
 
 .newsroom .contents .allcontents .box3 {
@@ -466,7 +578,19 @@ header .main .sidemenu li:last-of-type i {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  position: relative;
   }
+
+  .newsroom .contents .allcontents .box3::after {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    }
 
 /* 옆으로 넘기는 효과 & box4 잘려서 나오게 하는 방법 찾기 
 .newsroom .contents .allcontents .box4 {
@@ -476,10 +600,21 @@ header .main .sidemenu li:last-of-type i {
   border-radius: 10px;
 }
 */
+.newsroom .contents .allcontents .subtitle {
+  position: relative;
+  z-index: 100;
+}
 
 .newsroom .contents .allcontents .title2 {
   font-size: 25px;
   margin: 10px 0 15px 0;
+  position: relative;
+  z-index: 100;
+}
+
+.newsroom .contents .allcontents .date {
+  position: relative;
+  z-index: 100;
 }
 
 /* globalnetwork */
@@ -557,7 +692,7 @@ header .main .sidemenu li:last-of-type i {
 }
 
 .globalnetwork .section .list .shame div {
-  padding: 15px 28px;
+  padding: 15px 35px;
   font-size: 23px;
   background-color: #fff;
   border-radius: 10px;
